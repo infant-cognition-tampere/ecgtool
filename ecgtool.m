@@ -14,13 +14,11 @@ h.rootdir = fileparts(mfilename('fullpath'));
 if ~isdeployed
     fundir = [h.rootdir filesep 'functions' filesep];
     moduledir = [h.rootdir filesep 'modules' filesep];
-    peakdetectiondir = [fundir 'peak_detection' filesep];
     
 	if (isdir(fundir) && isdir(h.rootdir))
         addpath(h.rootdir);
 		addpath(fundir);
         addpath(moduledir);
-        addpath(peakdetectiondir);
 	end
 end
 
